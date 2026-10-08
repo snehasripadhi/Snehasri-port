@@ -1,0 +1,2121 @@
+tml
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snehasri Padhi | Portfolio</title>
+
+
+    <!-- Bootstrap CSS -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <style>
+
+        /* ================= BODY ================= */
+
+        body {
+
+            margin: 0;
+
+            font-family: Arial, sans-serif;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #312e81,
+                    #581c87,
+                    #0f172a
+                );
+
+            background-attachment: fixed;
+
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .navbar {
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #0f172a,
+                    #312e81,
+                    #581c87
+                );
+
+            box-shadow:
+                0 5px 25px rgba(0, 0, 0, 0.35);
+
+        }
+
+
+        .navbar-brand {
+
+            font-size: 27px;
+
+            font-weight: bold;
+
+            color: white !important;
+
+        }
+
+        .navbar-brand:hover{
+            color:#1e1b4b !important;
+            border-radius: 20px;
+            border: 2px solid whitesmoke;
+            background-color: hotpink;
+            width: 100px;
+            padding: 10px;
+
+        }
+
+
+
+
+        .navbar-brand span {
+
+            color: #c084fc;
+
+        }
+
+
+        .nav-link {
+
+            color: #e9d5ff !important;
+
+            font-weight: 500;
+
+            margin-left: 15px;
+
+        }
+
+
+        .nav-link:hover {
+
+            color:#1e1b4b !important;
+            border-radius: 20px;
+            border: 2px solid whitesmoke;
+            background-color: hotpink;
+            width: 90px;
+            padding: 10px;
+         
+
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0f172a 10%,
+                    #312e81 45%,
+                    #7e22ce 75%,
+                    #4c1d95 100%
+                );
+
+        }
+
+
+        .hero h5 {
+
+            color: #d8b4fe;
+
+            letter-spacing: 4px;
+
+            font-weight: bold;
+
+        }
+
+
+        .hero h1 {
+
+            font-size: 70px;
+
+            font-weight: bold;
+
+            margin-top: 15px;
+
+        }
+
+
+        .hero h1 span {
+
+            color: #d8b4fe;
+
+        }
+
+
+        .hero h3 {
+
+            color: #e9d5ff;
+
+            margin-top: 15px;
+
+        }
+
+
+        .hero p {
+
+            color: #ddd6fe;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            max-width: 650px;
+
+            margin-top: 20px;
+
+        }
+
+
+        .hero-btn {
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #a855f7,
+                    #ec4899
+                );
+
+            color: white;
+
+            border: none;
+
+            padding: 13px 30px;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+
+            margin-top: 20px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .hero-btn:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 10px 25px rgba(236, 72, 153, 0.4);
+
+            color: white;
+
+        }
+
+
+        /* ================= DECORATIVE CIRCLES ================= */
+
+        .circle {
+
+            position: absolute;
+
+            border-radius: 50%;
+
+            opacity: 0.18;
+
+        }
+
+
+        .circle1 {
+
+            width: 300px;
+
+            height: 300px;
+
+            background: #c084fc;
+
+            right: -100px;
+
+            top: 100px;
+
+        }
+
+
+        .circle2 {
+
+            width: 180px;
+
+            height: 180px;
+
+            background: #ec4899;
+
+            left: -70px;
+
+            bottom: 50px;
+
+        }
+
+
+        /* ================= SECTION ================= */
+
+        section {
+
+            padding: 90px 0;
+
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 55px;
+
+        }
+
+
+        .section-title h2 {
+
+            font-size: 42px;
+
+            font-weight: bold;
+
+        }
+
+
+        .section-title span {
+
+            color: #d8b4fe;
+
+        }
+
+
+        .section-title p {
+
+            color: #ddd6fe;
+
+        }
+
+
+        /* ================= COMMON CARD ================= */
+
+        .portfolio-card {
+
+            height: 100%;
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.15),
+                    rgba(255,255,255,0.05)
+                );
+
+            border: 1px solid rgba(255,255,255,0.18);
+
+            box-shadow:
+                0 10px 35px rgba(0,0,0,0.25);
+
+            transition:
+                transform 0.4s,
+                box-shadow 0.4s,
+                background 0.4s;
+
+            backdrop-filter: blur(10px);
+
+        }
+
+
+        /* CARD HOVER */
+
+        .portfolio-card:hover {
+
+            transform: translateY(-12px);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(168,85,247,0.35),
+                    rgba(236,72,153,0.25)
+                );
+
+            box-shadow:
+                0 20px 45px rgba(0,0,0,0.40);
+
+        }
+
+
+        .portfolio-card i {
+
+            font-size: 45px;
+
+            color: #d8b4fe;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .portfolio-card h4 {
+
+            font-weight: bold;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .portfolio-card p {
+
+            color: #ddd6fe;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* ================= ABOUT ================= */
+
+        .about-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #1e1b4b,
+                    #4c1d95
+                );
+
+        }
+
+
+        /* ================= EDUCATION ================= */
+
+        .education-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #312e81,
+                    #581c87
+                );
+
+        }
+
+
+        .education-card {
+
+            border-left: 5px solid #d8b4fe;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,255,255,0.12),
+                    rgba(255,255,255,0.04)
+                );
+
+            transition: 0.4s;
+
+        }
+
+
+        .education-card:hover {
+
+            transform: translateX(10px);
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.35);
+
+        }
+
+
+        .education-card h6 {
+
+            color: #d8b4fe;
+
+            font-weight: bold;
+
+        }
+
+
+        .education-card p {
+
+            color: #ddd6fe;
+
+        }
+
+
+        /* ================= SKILLS ================= */
+
+        .skills-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #312e81
+                );
+
+        }
+
+
+        .skill-list {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 0;
+
+        }
+
+
+        .skill-list li {
+
+            padding: 8px 0;
+
+            color: #ddd6fe;
+
+        }
+
+
+        .skill-list i {
+
+            color: #c084fc;
+
+            margin-right: 8px;
+
+        }
+
+
+        /* ================= PROJECTS ================= */
+
+        .projects-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #4c1d95,
+                    #701a75
+                );
+
+        }
+
+
+        .project-icon {
+
+            height: 150px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 15px;
+
+            margin-bottom: 25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7e22ce,
+                    #db2777
+                );
+
+        }
+
+
+        .project-icon i {
+
+            font-size: 65px;
+
+            color: white;
+
+            margin: 0;
+
+        }
+
+
+        .tag {
+
+            display: inline-block;
+
+            padding: 6px 12px;
+
+            margin: 4px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #7e22ce,
+                    #db2777
+                );
+
+            color: white;
+
+            font-size: 13px;
+
+        }
+
+
+        /* ================= SOFT SKILLS ================= */
+
+        .soft-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #1e1b4b,
+                    #312e81
+                );
+
+        }
+
+
+        /* ================= LANGUAGES ================= */
+
+        .language-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #581c87,
+                    #701a75
+                );
+
+        }
+
+
+        .language-card {
+
+            text-align: center;
+
+            padding: 30px;
+
+        }
+
+
+        .language-card i {
+
+            font-size: 45px;
+
+        }
+
+
+        /* ================= CONTACT ================= */
+
+        .contact-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #312e81,
+                    #581c87
+                );
+
+        }
+
+
+        .contact-card {
+
+            text-align: center;
+
+            padding: 30px;
+
+            height: 100%;
+
+        }
+
+
+        .contact-card i {
+
+            font-size: 40px;
+
+            color: #d8b4fe;
+
+        }
+
+
+        .contact-card p {
+
+            color: #ddd6fe;
+
+            margin-top: 10px;
+
+        }
+
+
+        .contact-card a {
+
+            color: #ddd6fe;
+
+            text-decoration: none;
+
+        }
+
+
+        .contact-card a:hover {
+
+            color: white;
+
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #020617,
+                    #1e1b4b
+                );
+
+            padding: 25px;
+
+            text-align: center;
+
+            color: #c4b5fd;
+
+        }
+
+
+        footer span {
+
+            color: #e879f9;
+
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 768px) {
+
+            .hero {
+
+                text-align: center;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 45px;
+
+            }
+
+
+            .hero p {
+
+                font-size: 16px;
+
+            }
+
+
+            .section-title h2 {
+
+                font-size: 32px;
+
+            }
+
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            min-height: 100vh;
+            padding-top: 90px;
+        }
+
+        .hero-content {
+            animation: heroText 1s ease both;
+        }
+
+        .hero-image-wrap {
+            position: relative;
+            width: 390px;
+            height: 470px;
+            margin: 0 auto;
+            animation: heroImage 1.2s ease 0.2s both;
+        }
+
+        .hero-image-wrap::before {
+            content: "";
+            position: absolute;
+            inset: -18px;
+            border-radius: 45% 55% 50% 50%;
+            background: linear-gradient(135deg, #c084fc, #ec4899, #60a5fa);
+            animation: rotateGlow 8s linear infinite;
+            filter: blur(1px);
+            opacity: 0.9;
+        }
+
+        .hero-image-wrap::after {
+            content: "";
+            position: absolute;
+            inset: -7px;
+            border-radius: 45% 55% 50% 50%;
+            background: #17113a;
+            z-index: 0;
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 45% 55% 50% 50%;
+            border: 5px solid rgba(255,255,255,0.25);
+            box-shadow: 0 25px 70px rgba(0,0,0,0.45);
+        }
+
+        .floating-badge {
+            position: absolute;
+            z-index: 2;
+            right: -35px;
+            bottom: 45px;
+            padding: 14px 20px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.25);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            animation: floatBadge 3s ease-in-out infinite;
+        }
+
+        .floating-badge i {
+            color: #d8b4fe;
+            margin-right: 8px;
+        }
+
+        .hero h1 {
+            animation: textGlow 3s ease-in-out infinite alternate;
+        }
+
+        .hero-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 60%;
+            height: 100%;
+            background: rgba(255,255,255,0.25);
+            transform: skewX(-25deg);
+            animation: buttonShine 3.5s infinite;
+        }
+
+        .portfolio-card {
+            animation: cardAppear 0.8s ease both;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-12px) scale(1.02);
+        }
+
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -12px;
+            width: 55px;
+            height: 3px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #c084fc, #ec4899);
+            transform: translateX(-50%);
+            animation: titleLine 2s ease-in-out infinite alternate;
+        }
+
+        .circle1,
+        .circle2 {
+            animation: floatingCircle 7s ease-in-out infinite;
+        }
+
+        .circle2 {
+            animation-delay: -3s;
+        }
+
+        @keyframes heroText {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes heroImage {
+            from {
+                opacity: 0;
+                transform: translateX(60px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+            }
+        }
+
+        @keyframes rotateGlow {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes floatBadge {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        @keyframes floatingCircle {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            50% {
+                transform: translate(20px, -25px) scale(1.08);
+            }
+        }
+
+        @keyframes buttonShine {
+            0% {
+                left: -100%;
+            }
+            45%, 100% {
+                left: 150%;
+            }
+        }
+
+        @keyframes textGlow {
+            from {
+                text-shadow: 0 0 0 rgba(216,180,254,0);
+            }
+            to {
+                text-shadow: 0 0 22px rgba(216,180,254,0.3);
+            }
+        }
+
+        @keyframes cardAppear {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes titleLine {
+            from {
+                width: 35px;
+            }
+            to {
+                width: 85px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .hero {
+                padding-top: 130px;
+                padding-bottom: 70px;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-image-wrap {
+                width: 310px;
+                height: 380px;
+                margin-top: 60px;
+            }
+
+            .floating-badge {
+                right: -15px;
+            }
+
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-image-wrap {
+                width: 260px;
+                height: 320px;
+            }
+
+            .floating-badge {
+                right: -5px;
+                bottom: 25px;
+                padding: 10px 14px;
+                font-size: 13px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+
+        /* ================= SECTION-SPECIFIC MODERN DESIGNS ================= */
+
+        .section-title {
+            position: relative;
+        }
+
+        .section-title p {
+            margin-top: 22px;
+        }
+
+        /* ABOUT - profile cards */
+        .about-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-section::before,
+        .about-section::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid rgba(216,180,254,0.22);
+            pointer-events: none;
+        }
+
+        .about-section::before {
+            width: 260px;
+            height: 260px;
+            right: -100px;
+            top: 80px;
+            animation: orbitSlow 10s linear infinite;
+        }
+
+        .about-section::after {
+            width: 140px;
+            height: 140px;
+            left: -50px;
+            bottom: 70px;
+            animation: orbitSlow 7s linear infinite reverse;
+        }
+
+        .about-card {
+            position: relative;
+            overflow: hidden;
+            min-height: 270px;
+            padding: 34px;
+            border-radius: 28px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+            box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+            transition: 0.5s;
+        }
+
+        .about-card::before {
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            right: -45px;
+            top: -45px;
+            background: linear-gradient(135deg,#c084fc,#ec4899);
+            opacity: 0.25;
+            transition: 0.5s;
+        }
+
+        .about-card:hover {
+            transform: translateY(-15px);
+            border-color: rgba(216,180,254,0.6);
+            box-shadow: 0 25px 55px rgba(0,0,0,0.4);
+        }
+
+        .about-card:hover::before {
+            transform: scale(2);
+            opacity: 0.12;
+        }
+
+        .about-icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background: linear-gradient(135deg,#a855f7,#ec4899);
+            box-shadow: 0 10px 30px rgba(168,85,247,0.35);
+            margin-bottom: 24px;
+        }
+
+        .about-icon i {
+            color: white !important;
+            font-size: 30px !important;
+            margin: 0 !important;
+        }
+
+        /* EDUCATION - timeline */
+        .education-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .education-timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .education-timeline::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 50%;
+            width: 3px;
+            transform: translateX(-50%);
+            background: linear-gradient(#d8b4fe,#ec4899,#60a5fa);
+            border-radius: 10px;
+        }
+
+        .education-item {
+            position: relative;
+            width: 50%;
+            padding: 15px 45px;
+            animation: educationReveal 0.9s ease both;
+        }
+
+        .education-item:nth-child(1) {
+            margin-right: auto;
+        }
+
+        .education-item:nth-child(2) {
+            margin-left: 50%;
+        }
+
+        .education-dot {
+            position: absolute;
+            top: 35px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #ec4899;
+            border: 5px solid #312e81;
+            box-shadow: 0 0 0 5px rgba(236,72,153,0.18), 0 0 25px rgba(236,72,153,0.7);
+            z-index: 2;
+        }
+
+        .education-item:nth-child(1) .education-dot {
+            right: -11px;
+        }
+
+        .education-item:nth-child(2) .education-dot {
+            left: -11px;
+        }
+
+        .education-box {
+            position: relative;
+            padding: 30px;
+            border-radius: 24px;
+            background: rgba(255,255,255,0.09);
+            border: 1px solid rgba(255,255,255,0.18);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            transition: 0.45s;
+        }
+
+        .education-box:hover {
+            transform: scale(1.04);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+            border-color: #d8b4fe;
+        }
+
+        .education-year {
+            display: inline-block;
+            padding: 7px 15px;
+            border-radius: 20px;
+            background: linear-gradient(90deg,#7e22ce,#db2777);
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* TECHNICAL SKILLS - skill tiles */
+        .skills-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-tile {
+            position: relative;
+            min-height: 260px;
+            padding: 32px;
+            border-radius: 25px;
+            background: linear-gradient(145deg,rgba(255,255,255,0.12),rgba(255,255,255,0.035));
+            border: 1px solid rgba(255,255,255,0.16);
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .skill-tile::after {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            right: -80px;
+            bottom: -80px;
+            background: #a855f7;
+            opacity: 0.12;
+            transition: 0.5s;
+        }
+
+        .skill-tile:hover {
+            transform: translateY(-12px) rotateX(3deg);
+            border-color: rgba(216,180,254,0.55);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+        }
+
+        .skill-tile:hover::after {
+            transform: scale(1.6);
+        }
+
+        .skill-heading {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 22px;
+        }
+
+        .skill-heading i {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: linear-gradient(135deg,#a855f7,#ec4899);
+            color: white !important;
+            font-size: 25px !important;
+            margin: 0 !important;
+        }
+
+        .skill-chip {
+            display: inline-block;
+            padding: 8px 14px;
+            margin: 5px 3px;
+            border-radius: 14px;
+            color: #f5f3ff;
+            background: rgba(216,180,254,0.12);
+            border: 1px solid rgba(216,180,254,0.2);
+            transition: 0.3s;
+        }
+
+        .skill-chip:hover {
+            transform: translateY(-4px);
+            background: linear-gradient(90deg,#7e22ce,#db2777);
+            border-color: transparent;
+        }
+
+        /* PROJECTS - large project cards */
+        .projects-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card {
+            position: relative;
+            height: 100%;
+            padding: 0;
+            overflow: hidden;
+            border-radius: 28px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            transition: 0.5s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 65px rgba(0,0,0,0.5);
+        }
+
+        .project-top {
+            height: 190px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg,#7e22ce,#db2777,#4f46e5);
+        }
+
+        .project-top::before,
+        .project-top::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.35);
+            animation: projectOrbit 7s linear infinite;
+        }
+
+        .project-top::before {
+            width: 230px;
+            height: 230px;
+        }
+
+        .project-top::after {
+            width: 150px;
+            height: 150px;
+            animation-direction: reverse;
+        }
+
+        .project-top i {
+            position: relative;
+            z-index: 2;
+            font-size: 75px !important;
+            color: white !important;
+            margin: 0 !important;
+            animation: iconFloat 3s ease-in-out infinite;
+        }
+
+        .project-body {
+            padding: 30px;
+        }
+
+        .project-number {
+            color: #d8b4fe;
+            font-size: 13px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        /* SOFT SKILLS - circular feature cards */
+        .soft-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .soft-card {
+            height: 100%;
+            min-height: 220px;
+            padding: 28px 20px;
+            text-align: center;
+            border-radius: 50px 20px 50px 20px;
+            background: linear-gradient(145deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04));
+            border: 1px solid rgba(255,255,255,0.18);
+            transition: 0.5s;
+        }
+
+        .soft-card:hover {
+            border-radius: 20px 50px 20px 50px;
+            transform: translateY(-12px) rotate(1deg);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+        }
+
+        .soft-icon {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(135deg,#a855f7,#ec4899);
+            box-shadow: 0 0 0 8px rgba(216,180,254,0.08), 0 12px 35px rgba(168,85,247,0.35);
+            animation: softPulse 3s ease-in-out infinite;
+        }
+
+        .soft-icon i {
+            color: white !important;
+            font-size: 34px !important;
+            margin: 0 !important;
+        }
+
+        /* LANGUAGES - glass pills */
+        .language-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .language-card {
+            position: relative;
+            min-height: 180px;
+            padding: 30px 20px;
+            border-radius: 30px;
+            overflow: hidden;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+            transition: 0.45s;
+        }
+
+        .language-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg,rgba(192,132,252,0.15),rgba(236,72,153,0.1));
+            transform: translateY(100%);
+            transition: 0.45s;
+        }
+
+        .language-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+        }
+
+        .language-card:hover::before {
+            transform: translateY(0);
+        }
+
+        .language-icon {
+            position: relative;
+            z-index: 1;
+            width: 65px;
+            height: 65px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background: linear-gradient(135deg,#7e22ce,#db2777);
+        }
+
+        .language-icon i {
+            color: white !important;
+            font-size: 30px !important;
+            margin: 0 !important;
+        }
+
+        .language-card h4 {
+            position: relative;
+            z-index: 1;
+            margin-top: 18px;
+        }
+
+        /* CONTACT - glowing contact cards */
+        .contact-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            top: -210px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: radial-gradient(circle,rgba(168,85,247,0.22),transparent 68%);
+            animation: contactGlow 5s ease-in-out infinite alternate;
+        }
+
+        .contact-card {
+            position: relative;
+            padding: 35px 25px;
+            border-radius: 28px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .contact-card::before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 0;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(#c084fc,#ec4899);
+            transition: 0.5s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 55px rgba(0,0,0,0.42);
+        }
+
+        .contact-card:hover::before {
+            height: 100%;
+        }
+
+        .contact-icon {
+            width: 75px;
+            height: 75px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 24px;
+            background: linear-gradient(135deg,#a855f7,#ec4899);
+            box-shadow: 0 12px 35px rgba(168,85,247,0.35);
+        }
+
+        .contact-icon i {
+            color: white !important;
+            font-size: 32px !important;
+            margin: 0 !important;
+        }
+
+        .contact-card a,
+        .contact-card p {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* FOOTER */
+        footer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 0;
+            left: -100%;
+            background: linear-gradient(90deg,transparent,#d8b4fe,#ec4899,transparent);
+            animation: footerLine 4s linear infinite;
+        }
+
+        /* SECTION ANIMATIONS */
+        @keyframes orbitSlow {
+            from {
+                transform: rotate(0deg) translateX(15px) rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg) translateX(15px) rotate(-360deg);
+            }
+        }
+
+        @keyframes educationReveal {
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes projectOrbit {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes iconFloat {
+            0%,100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes softPulse {
+            0%,100% {
+                box-shadow: 0 0 0 8px rgba(216,180,254,0.08), 0 12px 35px rgba(168,85,247,0.35);
+            }
+            50% {
+                box-shadow: 0 0 0 15px rgba(216,180,254,0.03), 0 15px 45px rgba(236,72,153,0.45);
+            }
+        }
+
+        @keyframes contactGlow {
+            from {
+                opacity: 0.55;
+                transform: translateX(-50%) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) scale(1.15);
+            }
+        }
+
+        @keyframes footerLine {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .education-timeline::before {
+                left: 10px;
+            }
+
+            .education-item,
+            .education-item:nth-child(2) {
+                width: 100%;
+                margin: 0;
+                padding-left: 45px;
+                padding-right: 10px;
+            }
+
+            .education-item .education-dot,
+            .education-item:nth-child(1) .education-dot,
+            .education-item:nth-child(2) .education-dot {
+                left: 0;
+                right: auto;
+            }
+
+            .education-box {
+                padding: 24px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            Sneha<span>.</span>
+        </a>
+
+
+        <div class="ms-auto d-none d-lg-block">
+
+            <a class="nav-link d-inline-block" href="#about">
+                About
+            </a>
+
+            <a class="nav-link d-inline-block" href="#education">
+                Education
+            </a>
+
+            <a class="nav-link d-inline-block" href="#skills">
+                Skills
+            </a>
+
+            <a class="nav-link d-inline-block" href="#projects">
+                Projects
+            </a>
+
+            <a class="nav-link d-inline-block" href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 hero-content">
+                <h5>HELLO, I'M</h5>
+
+                <h1>
+                    Snehasri <span>Padhi</span>
+                </h1>
+
+                <h3>Software Developer</h3>
+
+                <p>
+                    BCA graduate and currently pursuing MCA, with a strong
+                    foundation in programming, databases and web technologies.
+                    Passionate about technology and continuously improving
+                    technical skills.
+                </p>
+
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#projects" class="btn hero-btn">
+                        Explore My Projects
+                    </a>
+                    <a href="#contact" class="btn hero-btn">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="hero-image-wrap">
+                    <img src="./Sneha_Portfolio.jpeg" alt="Snehasri Padhi" class="hero-image">
+                    <div class="floating-badge">
+                        <i class="bi bi-code-slash"></i>
+                        MCA Student • Developer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About <span>Me</span></h2>
+            <p>A little about me</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <h4>Who I Am</h4>
+                    <p>
+                        I am Snehasri Padhi, a Software Developer from
+                        Berhampur, Odisha, currently pursuing Master of
+                        Computer Applications.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h4>What I Know</h4>
+                    <p>
+                        My technical foundation includes Python,
+                        JavaScript, PHP, HTML, CSS, SQL and DBMS.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mx-md-auto">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="bi bi-rocket-takeoff"></i>
+                    </div>
+                    <h4>My Goal</h4>
+                    <p>
+                        I am eager to begin my career in an entry-level
+                        IT role where I can contribute, learn and grow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="education-section" id="education">
+    <div class="container">
+        <div class="section-title">
+            <h2>My <span>Education</span></h2>
+            <p>My academic journey</p>
+        </div>
+
+        <div class="education-timeline">
+            <div class="education-item">
+                <span class="education-dot"></span>
+                <div class="education-box">
+                    <span class="education-year">2025 – Present</span>
+                    <h4>Master of Computer Applications</h4>
+                    <p>Roland Institute of Technology, Berhampur</p>
+                    <p><strong>Currently Pursuing</strong></p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <span class="education-dot"></span>
+                <div class="education-box">
+                    <span class="education-year">2022 – 2025</span>
+                    <h4>Bachelor of Computer Application</h4>
+                    <p>Science College (Autonomous), Hinjilicut</p>
+                    <p><strong>CGPA: 8.25</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills-section" id="skills">
+    <div class="container">
+        <div class="section-title">
+            <h2>Technical <span>Skills</span></h2>
+            <p>Technologies and concepts</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="skill-tile">
+                    <div class="skill-heading">
+                        <i class="bi bi-code-square"></i>
+                        <h4>Programming</h4>
+                    </div>
+                    <span class="skill-chip">Python</span>
+                    <span class="skill-chip">JavaScript</span>
+                    <span class="skill-chip">PHP</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="skill-tile">
+                    <div class="skill-heading">
+                        <i class="bi bi-window"></i>
+                        <h4>Web Technologies</h4>
+                    </div>
+                    <span class="skill-chip">HTML</span>
+                    <span class="skill-chip">CSS</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="skill-tile">
+                    <div class="skill-heading">
+                        <i class="bi bi-database"></i>
+                        <h4>Database</h4>
+                    </div>
+                    <span class="skill-chip">SQL</span>
+                    <span class="skill-chip">DBMS</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="skill-tile">
+                    <div class="skill-heading">
+                        <i class="bi bi-diagram-3"></i>
+                        <h4>Concepts</h4>
+                    </div>
+                    <span class="skill-chip">DSA Basics</span>
+                    <span class="skill-chip">OOP</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="skill-tile">
+                    <div class="skill-heading">
+                        <i class="bi bi-tools"></i>
+                        <h4>Tools</h4>
+                    </div>
+                    <span class="skill-chip">MS Word</span>
+                    <span class="skill-chip">MS Excel</span>
+                    <span class="skill-chip">PowerPoint</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects-section" id="projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>My <span>Projects</span></h2>
+            <p>Academic projects</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="project-card">
+                    <div class="project-top">
+                        <i class="bi bi-airplane"></i>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-number">PROJECT 01</div>
+                        <h4 class="mt-2">Airline Reservation System</h4>
+                        <p>
+                            Developed a system to manage flight bookings,
+                            cancellations and passenger records.
+                        </p>
+                        <p>
+                            Implemented database integration for storing
+                            and retrieving reservation data.
+                        </p>
+
+                        <span class="tag">Database</span>
+                        <span class="tag">Reservation</span>
+                        <span class="tag">Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="project-card">
+                    <div class="project-top">
+                        <i class="bi bi-cart3"></i>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-number">PROJECT 02</div>
+                        <h4 class="mt-2">Online Shopping System</h4>
+                        <p>
+                            Built a web-based application for browsing
+                            products and managing orders.
+                        </p>
+                        <p>
+                            Implemented user authentication and product
+                            management features.
+                        </p>
+
+                        <span class="tag">Web Application</span>
+                        <span class="tag">Authentication</span>
+                        <span class="tag">Product Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= SOFT SKILLS ================= -->
+
+<section class="soft-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Soft <span>Skills</span></h2>
+            <p>My strengths</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="soft-card">
+                    <div class="soft-icon">
+                        <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <h4>Communication</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="soft-card">
+                    <div class="soft-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h4>Teamwork</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="soft-card">
+                    <div class="soft-icon">
+                        <i class="bi bi-puzzle"></i>
+                    </div>
+                    <h4>Problem-Solving</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="soft-card">
+                    <div class="soft-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h4>Quick Learner</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= LANGUAGES ================= -->
+
+<section class="language-section">
+    <div class="container">
+        <div class="section-title">
+            <h2><span>Languages</span></h2>
+            <p>Languages I can communicate in</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="language-card text-center">
+                    <div class="language-icon">
+                        <i class="bi bi-translate"></i>
+                    </div>
+                    <h4>English</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="language-card text-center">
+                    <div class="language-icon">
+                        <i class="bi bi-translate"></i>
+                    </div>
+                    <h4>Hindi</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="language-card text-center">
+                    <div class="language-icon">
+                        <i class="bi bi-translate"></i>
+                    </div>
+                    <h4>Odia</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact <span>Me</span></h2>
+            <p>Let's connect</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card contact-card">
+                    <div class="contact-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <h4>Location</h4>
+                    <p>Berhampur, Odisha</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card contact-card">
+                    <div class="contact-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <p>7978306025</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card contact-card">
+                    <div class="contact-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>
+                        <a href="mailto:snehasripadhi@gmail.com">
+                            snehasripadhi@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p class="mb-0">
+
+        © 2026
+
+        <span>
+            Snehasri Padhi
+        </span>
+
+        | Software Developer
+
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
